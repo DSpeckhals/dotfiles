@@ -1,0 +1,3 @@
+[submodule "vim/pack/dspeckhals/start/rust.vim"]
+	path = vim/pack/dspeckhals/start/rust.vim
+	url = git@github.com:rust-lang/rust.vim.git

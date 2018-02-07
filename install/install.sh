@@ -1,0 +1,23 @@
+#!/bin/bash
+
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# bin
+mkdir -p ~/bin
+ln -s ${BASEDIR}/bin/mig-local ~/bin/mig-local
+
+# config
+ln -s ${BASEDIR}/config/alacritty.yml ~/.config/alacritty.yml
+
+# vim
+ln -s ${BASEDIR}/vim ~/.vim
+
+# ~ dotfiles
+ln -s ${BASEDIR}/bash_alias_git ~/.bash_alias_git
+ln -s ${BASEDIR}/bash_aliases ~/.bash_aliases
+ln -s ${BASEDIR}/bash_logout ~/.bash_logout
+ln -s ${BASEDIR}/bashrc ~/.bashrc
+ln -s ${BASEDIR}/profile ~/.profile
+ln -s ${BASEDIR}/tmux.conf ~/.tmux.conf
+ln -s ${BASEDIR}/vimrc ~/.vimrc
+
