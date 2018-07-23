@@ -1,6 +1,9 @@
 [submodule "vim/pack/dspeckhals/start/rust.vim"]
 	path = vim/pack/dspeckhals/start/rust.vim
 	url = git@github.com:rust-lang/rust.vim.git
+[submodule "vim/pack/dspeckhals/opt/onedark.vim"]
+        path = vim/pack/dspeckhals/opt/onedark.vim
+        url = git@github.com:joshdick/onedark.vim.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = git@github.com:robbyrussell/oh-my-zsh.git

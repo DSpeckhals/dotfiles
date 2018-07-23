@@ -36,3 +36,7 @@ hi clear SpellLocal
 hi SpellLocal term=underline cterm=underline
 
 hi Visual cterm=none ctermfg=none ctermbg=Black
+
+" Theme
+packadd! onedark.vim
+colorscheme onedark
