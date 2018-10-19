@@ -16,11 +16,6 @@ ln -s ${BASEDIR}/vim ~/.vim
 ln -s ${BASEDIR}/oh-my-zsh ~/.oh-my-ssh
 
 # ~ dotfiles
-ln -s ${BASEDIR}/bash_alias_git ~/.bash_alias_git
-ln -s ${BASEDIR}/bash_aliases ~/.bash_aliases
-ln -s ${BASEDIR}/bash_logout ~/.bash_logout
-ln -s ${BASEDIR}/bashrc ~/.bashrc
-ln -s ${BASEDIR}/profile ~/.profile
 ln -s ${BASEDIR}/tmux.conf ~/.tmux.conf
 ln -s ${BASEDIR}/vimrc ~/.vimrc
 ln -s ${BASEDIR}/zshrc ~/.zshrc
