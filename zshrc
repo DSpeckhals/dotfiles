@@ -65,6 +65,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Init pure theme
+fpath=(~/.zfunctions $fpath)
 autoload -U promptinit; promptinit
 prompt pure
 
