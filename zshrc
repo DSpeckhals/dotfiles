@@ -60,7 +60,6 @@ DISABLE_AUTO_TITLE="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  fossil
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -101,3 +100,5 @@ autoload -Uz compinit && compinit -i
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+compdef vdc=docker-compose
