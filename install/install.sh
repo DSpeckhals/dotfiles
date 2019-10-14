@@ -1,26 +1,25 @@
 #!/bin/bash
 
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+set -e
 
-# bin
-mkdir -p ~/bin
-ln -s ${BASEDIR}/bin/mig-local ~/bin/mig-local
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd ../ && pwd)"
+echo $BASEDIR
 
 # config
-ln -s ${BASEDIR}/config/alacritty.yml ~/.config/alacritty.yml
+ln -sf ${BASEDIR}/config/alacritty.yml ~/.config/alacritty.yml
 
 # vim
-ln -s ${BASEDIR}/vim ~/.vim
+ln -sf ${BASEDIR}/vim ~/.vim
 
 # oh-my-zsh
-ln -s ${BASEDIR}/oh-my-zsh ~/.oh-my-ssh
+ln -sf ${BASEDIR}/oh-my-zsh ~/.oh-my-zsh
 
 # zsh pure prompt
-ln -s ${BASEDIR}/pure/pure.zsh ${BASEDIR}/zfunctions/prompt_pure_setup
-ln -s ${BASEDIR}/pure/async.zsh ${BASEDIR}/zfunctions/async
-ln -s ${BASEDIR}/zfunctions ~/.zfunctions
+ln -sfn ${BASEDIR}/zfunctions ~/.zfunctions
+ln -sf ${BASEDIR}/pure/pure.zsh ~/.zfunctions/prompt_pure_setup
+ln -sf ${BASEDIR}/pure/async.zsh ~/.zfunctions/async
 
 # ~ dotfiles
-ln -s ${BASEDIR}/tmux.conf ~/.tmux.conf
-ln -s ${BASEDIR}/vimrc ~/.vimrc
-ln -s ${BASEDIR}/zshrc ~/.zshrc
+ln -sf ${BASEDIR}/tmux.conf ~/.tmux.conf
+ln -sf ${BASEDIR}/vimrc ~/.vimrc
+ln -sf ${BASEDIR}/zshrc ~/.zshrc
