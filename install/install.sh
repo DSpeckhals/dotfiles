@@ -6,7 +6,8 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd ../ && pwd)"
 echo $BASEDIR
 
 # config
-ln -sf ${BASEDIR}/config/alacritty.yml ~/.config/alacritty.yml
+mkdir -p ~/.config/alacritty
+ln -sf ${BASEDIR}/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 # vim
 ln -sf ${BASEDIR}/vim ~/.vim
