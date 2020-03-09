@@ -9,6 +9,13 @@ echo $BASEDIR
 mkdir -p ~/.config/alacritty
 ln -sf ${BASEDIR}/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
+mkdir -p ~/.config/sway
+ln -sf ${BASEDIR}/config/sway/config ~/.config/sway/config
+ln -sf ${BASEDIR}/config/sway/status.toml ~/.config/sway/status.toml
+
+mkdir -p ~/.config/swaylock
+ln -sf ${BASEDIR}/config/swaylock/config ~/.config/swaylock/config
+
 # vim
 ln -sf ${BASEDIR}/vim ~/.vim
 
