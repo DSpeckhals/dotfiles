@@ -1,0 +1,5 @@
+image=~/.local/share/backgrounds/wall.png
+scaling=stretch
+font=Iosevka
+daemonize
+show-failed-attempts

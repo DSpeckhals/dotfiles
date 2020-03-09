@@ -1,0 +1,67 @@
+icons = "awesome"
+
+[theme]
+name = "plain"
+
+[theme.overrides]
+idle_bg = "#282c3460"
+idle_fg = "#ffffff"
+info_bg = "#282c3460"
+info_fg = "#61afef"
+good_bg = "#282c3460"
+good_fg = "#98c379"
+warning_bg = "#282c3460"
+warning_fg = "#d19a66"
+critical_bg = "#282c3460"
+critical_fg = "#e06c75"
+separator = "|"
+separator_bg = "#282c3460"
+separator_fg = "#abb2bf"
+alternating_tint_bg = "#282c3460"
+alternating_tint_fg = "#282c3460"
+
+[[block]]
+block = "net"
+device = "wlp2s0"
+ssid = true
+ip = true
+graph_up = false
+graph_down = false
+speed_up = false
+speed_down = false
+
+# [[block]]
+# block = "disk_space"
+# path = "/home"
+# alias = "home"
+# info_type = "available"
+# unit = "GB"
+# interval = 20
+# warning = 20.0
+# alert = 10.0
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{Mup}%"
+format_swap = "{SUp}%"
+
+[[block]]
+block = "cpu"
+interval = 1
+
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage}% {time}"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "backlight"
+
+[[block]]
+block = "time"
+interval = 60
+format = "%a %m-%d %R"
