@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Lock",
+    "exec": "swaylock",
+    "icon": "/home/dustin/.config/nwg-launchers/nwgbar/images/lock.svg"
+  },
+  {
+    "name": "Logout",
+    "exec": "swaymsg exit",
+    "icon": "/home/dustin/.config/nwg-launchers/nwgbar/images/logout.svg"
+  },
+  {
+    "name": "Reboot",
+    "exec": "systemctl reboot",
+    "icon": "/home/dustin/.config/nwg-launchers/nwgbar/images/reboot.svg"
+  },
+  {
+    "name": "Shutdown",
+    "exec": "systemctl -i poweroff",
+    "icon": "/home/dustin/.config/nwg-launchers/nwgbar/images/power-off.svg"
+  }
+]

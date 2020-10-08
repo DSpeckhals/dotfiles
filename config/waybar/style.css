@@ -1,0 +1,127 @@
+* {
+    border: none;
+    border-radius: 0;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: Iosevka, sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(40, 44, 52, 0.5);
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+    border-bottom: 3px solid transparent;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    background: rgba(40, 44, 52, 0.2);
+    box-shadow: inherit;
+    border-bottom: 3px solid #ffffff;
+}
+
+#workspaces button.focused {
+    background-color: #5c6370;
+    border-bottom: 3px solid #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #e5c07b;
+}
+
+#mode {
+    background-color: #5c6370;
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#backlight,
+#network,
+#pulseaudio,
+#mode,
+#idle_inhibitor,
+#custom-power {
+    margin: 0;
+    padding: 0px 10px 0px 10px;
+    color: #ffffff;
+    background-color: #282c34;
+}
+
+#idle_inhibitor {
+    margin-left: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ffffff;
+    color: #2d3436;
+}
+
+#pulseaudio.muted {
+    background-color: #abb2bf;
+    color: #3e4452;
+}
+
+#battery {
+    border-radius: 0 10px 10px 0;
+}
+
+#battery.charging {
+    background-color: #98c379;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #282c34;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #e06c75;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#clock {
+    background: transparent;
+}
+
+#custom-power {
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 0 8px;
+}
+
+label:focus {
+    background-color: #282c34;
+}
