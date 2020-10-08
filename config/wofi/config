@@ -1,0 +1,14 @@
+show=drun
+width=25%
+x=0
+y=0
+dynamic_lines=true
+term=alacritty
+allow_markup=true
+always_parse_args=true
+layer=overlay
+allow_images=true
+insensitive=true
+prompt=
+image_size=25
+display_generic=true
