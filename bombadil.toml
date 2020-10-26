@@ -9,9 +9,9 @@ swaylock = { source = "config/swaylock", target = ".config/swaylock" }
 waybar = { source = "config/waybar", target = ".config/waybar" }
 wofi = { source = "config/wofi", target = ".config/wofi" }
 
-oh-my-zsh = { source = "oh-my-zsh", target = ".oh-my-zsh" }
 zfunctions = { source = "zfunctions", target = ".zfunctions" }
 tmux = { source = "tmux.conf", target = ".tmux.conf" }
 vim = { source = "vim", target = ".vim" }
 vimrc = { source = "vimrc", target = ".vimrc" }
 zshrc = { source = "zshrc", target = ".zshrc" }
+
