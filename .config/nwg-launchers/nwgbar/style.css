@@ -24,7 +24,7 @@ button:hover {
 }
 
 button:focus {
-    box-shadow: 0 0 2px;
+    box-shadow: 0 0 4px;
 }
 
 grid {
