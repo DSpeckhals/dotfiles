@@ -60,17 +60,17 @@ DISABLE_AUTO_TITLE="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  gcloud
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # Init pure theme
-fpath=(~/.zfunctions $fpath)
+fpath+=(~/.zfunctions)
 autoload -U promptinit; promptinit
 prompt pure
 
-fpath=(~/.zsh/completion $fpath)
-autoload -Uz compinit && compinit -i
+#autoload -Uz compinit && compinit -i
 
 # User configuration
 
